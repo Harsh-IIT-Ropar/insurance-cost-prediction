@@ -5,7 +5,7 @@
 ![AI101 Mini-Project](https://img.shields.io/badge/AI101-Mini--Project-blue) ![Python](https://img.shields.io/badge/Python-3.10%2B-yellow)
 
 **Course:** AI101: Data Science and AI Essentials with Python, School of AI and Data Engineering, IIT Ropar
-**Team no.:** 32
+**Team no.:** 42
 
 ## Team and roles
 
@@ -37,12 +37,14 @@ Roles to assign among the four: Documentation lead, Execution lead, PPT lead, Vi
 ## Project structure
 
 ```
-[insurance-cost-prediction]/
+insurance-cost-prediction/
 ├── data/
 │   └── medical_insurance_cost_dataset_enhanced.csv
 ├── src/
-│   ├── main.py            # entry point
-│   └── plots.py
+|   ├── preprocess.py
+│   ├── model.py
+│   ├── plots.py
+│   └── main.py
 ├── outputs/               # plots are saved here
 ├── docs/
 │   └── [TODO: slides file]
