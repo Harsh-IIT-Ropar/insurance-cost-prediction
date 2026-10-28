@@ -11,10 +11,10 @@
 
 | Member | Entry no. | GitHub handle | Role |
 |---|---|---|---|
-| Rakshith A Y | 2026DAB1303 | [TODO @handle] | [TODO role] |
-| Nikhil Meena | 2026MCB1549 | [TODO @handle] | [TODO role] |
+| Rakshith A Y | 2026DAB1303 | [TODO @handle] | Video Lead |
+| Nikhil Meena | 2026MCB1549 | [TODO @handle] | Execution Lead |
 | Harsh Raj | 2026AIB1041 | [TODO @handle] | Documentation lead |
-| Prem Kiran Gedala | 2026EEB1394 | [TODO @handle] | [TODO role] |
+| Prem Kiran Gedala | 2026EEB1394 | [TODO @handle] | PPT Lead |
 
 Roles to assign among the four: Documentation lead, Execution lead, PPT lead, Video lead.
 *All four members contributed code (see commit history).*
