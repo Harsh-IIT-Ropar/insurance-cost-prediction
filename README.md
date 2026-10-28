@@ -1,28 +1,28 @@
-# [Insurance-Cost-Prediction]
+# Insurance-Cost-Prediction
 
-["Predicts healthcare insurance charges from patient and lifestyle factors using linear regression (pandas, matplotlib, scikit-learn)."]
+"Predicts healthcare insurance charges from patient and lifestyle factors using linear regression (pandas, matplotlib, scikit-learn)."
 
 ![AI101 Mini-Project](https://img.shields.io/badge/AI101-Mini--Project-blue) ![Python](https://img.shields.io/badge/Python-3.10%2B-yellow)
 
 **Course:** AI101: Data Science and AI Essentials with Python, School of AI and Data Engineering, IIT Ropar
-**Team no.:** [32]
+**Team no.:** 32
 
 ## Team and roles
 
 | Member | Entry no. | GitHub handle | Role |
 |---|---|---|---|
-| Rakshith A Y | 2026DAB1303 | [Rakshith-1303] | Video Lead |
-| Nikhil Meena | 2026MCB1549 | [Nikhil-1805] | Execution Lead |
-| Harsh Raj | 2026AIB1041 | [Harsh-IIT-Ropar] | Documentation lead |
-| Prem Kiran Gedala | 2026EEB1394 | [2026eeb1394-boop] | PPT Lead |
+| Rakshith A Y | 2026DAB1303 | Rakshith-1303 | Video Lead |
+| Nikhil Meena | 2026MCB1549 | Nikhil-1805 | Execution Lead |
+| Harsh Raj | 2026AIB1041 | Harsh-IIT-Ropar | Documentation lead |
+| Prem Kiran Gedala | 2026EEB1394 | 2026eeb1394-boop | PPT Lead |
 
 Roles to assign among the four: Documentation lead, Execution lead, PPT lead, Video lead.
 *All four members contributed code (see commit history).*
 
 ## Problem and dataset
 
-- **Problem:** [Medical Insurance Cost Prediction]
-- **Task:** [Linear regression (charges) as target]
+- **Problem:** Medical Insurance Cost Prediction
+- **Task:** Linear regression (charges) as target
 - **Dataset:** Healthcare Insurance Cost Prediction Dataset (Kaggle, by miadul): https://www.kaggle.com/datasets/miadul/healthcare-insurance-cost-prediction-dataset
 - **File used:** `data/medical_insurance_cost_dataset_enhanced.csv`
 - **Size:** 7,500 rows, 22 columns
@@ -42,7 +42,7 @@ Roles to assign among the four: Documentation lead, Execution lead, PPT lead, Vi
 │   └── medical_insurance_cost_dataset_enhanced.csv
 ├── src/
 │   ├── main.py            # entry point
-│   └── [plots.py]
+│   └── plots.py
 ├── outputs/               # plots are saved here
 ├── docs/
 │   └── [TODO: slides file]
@@ -53,11 +53,11 @@ Roles to assign among the four: Documentation lead, Execution lead, PPT lead, Vi
 
 ## Setup
 
-Tested on Python [ 3.11] ([TODO: operating systems tested]).
+Tested on Python  3.14.6 (Windows).
 
 ```bash
 git clone [TODO: repo URL]
-cd [TODO: repo-name]
+cd insurance-cost-prediction
 python -m venv venv
 source venv/bin/activate      # Windows: venv\Scripts\activate
 pip install -r requirements.txt
@@ -95,6 +95,6 @@ Plots saved in `outputs/`:
 
 ## AI-use disclosure
 
-- Claude (Anthropic): used by Harsh Raj for guidance on repo setup and for a first draft of this README's structure; reviewed and edited by Harsh Raj.
+- Claude (Anthropic): used by Harsh Raj for guidance on repo setup  ; reviewed and edited by Harsh Raj.
 - [TODO: each other member adds the tool, what it was used for, and how they checked it]
 - No AI was used to generate the dataset or the results.
