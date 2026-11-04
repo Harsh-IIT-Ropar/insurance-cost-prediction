@@ -1,19 +1,26 @@
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
+from pathlib import Path
 
-def load_data(path="data/medical_insurance_cost_dataset_enhanced.csv"):
+import pandas as pd
+
+ROOT = Path(__file__).resolve().parent.parent
+DATA_PATH = ROOT / "data" / "medical_insurance_cost_dataset_enhanced.csv"
+TARGET = "annual_medical_cost_usd"
+
+
+def load_data(path=DATA_PATH):
     return pd.read_csv(path)
 
-def preprocess(df, target="annual_medical_cost_usd"):
-    df = df.drop_duplicates().dropna()
-    df = pd.get_dummies(df, drop_first=True)
-    X = df.drop(columns=[target])
+
+def prepare_features(df, target=TARGET):
+    df = df.copy()
     y = df[target]
-    X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=0.2, random_state=42
-    )
-    scaler = StandardScaler()
-    X_train = scaler.fit_transform(X_train)
-    X_test = scaler.transform(X_test)
-    return X_train, X_test, y_train, y_test
+    X = df.drop(columns=[target, "customer_id"])
+
+    bp = X["blood_pressure"].str.split("/", expand=True).astype(float)
+    X["systolic_bp"] = bp[0]
+    X["diastolic_bp"] = bp[1]
+    X = X.drop(columns=["blood_pressure"])
+
+    text_cols = [c for c in X.columns if not pd.api.types.is_numeric_dtype(X[c])]
+    X = pd.get_dummies(X, columns=text_cols, drop_first=True, dtype=float)
+    return X, y
