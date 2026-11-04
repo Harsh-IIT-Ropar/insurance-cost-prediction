@@ -1,23 +1,16 @@
-"""Plotting helpers for the insurance cost project.
-
-Each function draws one chart and saves it as a .png file in the outputs/ folder
-(next to src/), so it works on any laptop without absolute paths.
-"""
-
 from pathlib import Path
 
 import matplotlib
 
-matplotlib.use("Agg")  # no display needed; works on any machine
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 
-# outputs/ folder in the repo root, found relative to this file
+
 OUTPUT_DIR = Path(__file__).resolve().parent.parent / "outputs"
 
 
 def _save(fig, filename, outdir):
-    """Create the output folder if needed, save the figure, and print its path."""
     outdir = Path(outdir)
     outdir.mkdir(parents=True, exist_ok=True)
     path = outdir / filename
@@ -29,7 +22,6 @@ def _save(fig, filename, outdir):
 
 
 def plot_target_distribution(y, target_name="annual_medical_cost_usd", outdir=OUTPUT_DIR):
-    """Histogram of the target column, to show how its values are spread."""
     fig, ax = plt.subplots(figsize=(7, 4))
     ax.hist(y, bins=40, edgecolor="black")
     ax.set_xlabel(target_name)
@@ -39,7 +31,6 @@ def plot_target_distribution(y, target_name="annual_medical_cost_usd", outdir=OU
 
 
 def plot_correlation_heatmap(df, outdir=OUTPUT_DIR):
-    """Heatmap of correlations between the numeric columns of a DataFrame."""
     corr = df.select_dtypes(include="number").corr()
     fig, ax = plt.subplots(figsize=(9, 7))
     im = ax.imshow(corr.values, cmap="coolwarm", vmin=-1, vmax=1)
@@ -53,7 +44,6 @@ def plot_correlation_heatmap(df, outdir=OUTPUT_DIR):
 
 
 def plot_predicted_vs_actual(y_true, y_pred, outdir=OUTPUT_DIR):
-    """Scatter of real vs predicted values; points near the line mean good predictions."""
     y_true = np.asarray(y_true)
     y_pred = np.asarray(y_pred)
     fig, ax = plt.subplots(figsize=(6, 6))
@@ -69,7 +59,6 @@ def plot_predicted_vs_actual(y_true, y_pred, outdir=OUTPUT_DIR):
 
 
 def plot_residuals(y_true, y_pred, outdir=OUTPUT_DIR):
-    """Histogram of errors (actual - predicted); should be centred near zero."""
     residuals = np.asarray(y_true) - np.asarray(y_pred)
     fig, ax = plt.subplots(figsize=(7, 4))
     ax.hist(residuals, bins=40, edgecolor="black")
@@ -81,7 +70,6 @@ def plot_residuals(y_true, y_pred, outdir=OUTPUT_DIR):
 
 
 def plot_coefficients(feature_names, coefficients, top_n=15, outdir=OUTPUT_DIR):
-    """Bar chart of the largest model coefficients (by absolute size)."""
     coefficients = np.asarray(coefficients)
     order = np.argsort(np.abs(coefficients))[::-1][:top_n][::-1]
     names = [feature_names[i] for i in order]
