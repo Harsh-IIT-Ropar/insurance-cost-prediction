@@ -45,7 +45,13 @@ insurance-cost-prediction/
 │   ├── model.py
 │   ├── plots.py
 │   └── main.py
-├── outputs/               # plots are saved here
+├── outputs/        # plots are saved here
+│   ├── target_distribution.png
+│   ├── correlation_heatmap.png
+│   ├── predicted_vs_actual.png
+│   ├── residuals.png
+│   ├── coefficients.png
+│   └── predictions.csv
 ├── docs/
 │   └── [TODO: slides file]
 ├── requirements.txt
@@ -75,7 +81,7 @@ Library versions are pinned in `requirements.txt`.
 
 ## Expected output
 
-[TODO: add a terminal screenshot, e.g. `![Expected output](docs/expected_output.png)`]
+![Expected output](docs/expected_output.png)
 
 Plots saved in `outputs/`:
 - `target_distribution.png`
