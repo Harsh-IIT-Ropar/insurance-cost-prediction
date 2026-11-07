@@ -58,7 +58,7 @@ insurance-cost-prediction/
 Tested on Python  3.14.6 (Windows).
 
 ```bash
-git clone [TODO: repo URL]
+git clone https://github.com/Harsh-IIT-Ropar/insurance-cost-prediction.git
 cd insurance-cost-prediction
 python -m venv venv
 source venv/bin/activate      # Windows: venv\Scripts\activate
@@ -71,7 +71,7 @@ Library versions are pinned in `requirements.txt`.
 
 1. Run `python src/main.py`
 2. The script prints the model metrics and saves plots in `outputs/`
-3. Expected runtime: [TODO]
+3. Expected runtime: First run took about 11 seconds and later runs about 2 seconds
 
 ## Expected output
 
@@ -84,9 +84,9 @@ Plots saved in `outputs/`:
 
 | Metric | Value |
 |---|---|
-| R² (test set) | [TODO] |
-| RMSE | [TODO] |
-| MAE | [TODO] |
+| R² (test set) | 0.8852 |
+| RMSE | 2516.85 |
+| MAE | 2019.69 |
 
 [TODO: 2-3 lines on the key findings]
 
