@@ -78,7 +78,12 @@ Library versions are pinned in `requirements.txt`.
 [TODO: add a terminal screenshot, e.g. `![Expected output](docs/expected_output.png)`]
 
 Plots saved in `outputs/`:
-- [TODO: plot file names]
+- `target_distribution.png`
+- `correlation_heatmap.png`
+- `predicted_vs_actual.png`
+- `residuals.png`
+- `coefficients.png`
+- `predictions.csv` (actual vs predicted cost for the 1,500 test customers)
 
 ## Results
 
