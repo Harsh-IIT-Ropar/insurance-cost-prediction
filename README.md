@@ -63,7 +63,7 @@ insurance-cost-prediction/
 │   └── predictions.csv
 ├── docs/
 │   ├── expected_output.png
-│   └── [TODO: slides file name]
+│   └── Medical insurance  Presentation_.pdf
 ├── requirements.txt
 ├── .gitignore
 └── README.md
@@ -119,11 +119,11 @@ Files saved in `outputs/`:
 
 ## Links
 
-- Slides (5 slides): [TODO: `docs/<file name>`]
+- Slides (5 slides): [Read PDF](docs/Medical insurance  Presentation_.pdf)
 - Video (max 5 min): [TODO: unlisted YouTube or Drive link]
 
 ## AI-use disclosure
 
-- Claude (Anthropic): used by Harsh Raj for guidance on repo setup, the README structure and the notebook code; reviewed, run and edited by the team.
-- [TODO: Rakshith, Nikhil and Prem each add the tool they used, what it was used for, and how they checked it]
+- Claude (Anthropic): used by us for Learning purpose ,Guidance in Set-up Git-Hub, and Giving intial Structure of Readme .
+- It also helps to solve doubts and removing error.
 - No AI was used to generate the dataset or the results.
