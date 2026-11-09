@@ -86,7 +86,7 @@ Library versions are pinned in `requirements.txt`.
 ## How to run
 
 1. In the repo folder (with the virtual environment active), run `jupyter notebook`
-2. In the browser page that opens, open `main.ipynb`
+2. In the browser page that opens, open `src/main.ipynb`
 3. Click **Run → Run All Cells**
 4. The notebook prints the metrics under each cell and saves the charts and `predictions.csv` in `outputs/`
 5. Expected runtime: about 5 to 20 seconds for Run All Cells (the first run is slower while the libraries load)
