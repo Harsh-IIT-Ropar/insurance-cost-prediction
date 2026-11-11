@@ -5,7 +5,7 @@ Predicts annual medical insurance cost from patient demographics, lifestyle and 
 ![AI101 Mini-Project](https://img.shields.io/badge/AI101-Mini--Project-blue) ![Python](https://img.shields.io/badge/Python-3.10%2B-yellow)
 
 **Course:** AI101: Data Science and AI Essentials with Python, School of AI and Data Engineering, IIT Ropar
-**Team no.:** 42
+**Team no.:** 32
 
 ## Team and roles
 
