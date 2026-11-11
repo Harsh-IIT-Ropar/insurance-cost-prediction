@@ -119,7 +119,7 @@ Files saved in `outputs/`:
 
 ## Links
 
-- Slides (5 slides):[Medical_Insurance_Presentation.pptx](docs/Medical_Insurance_Presentation%20(1).pptx)
+- Slides (5 slides):[Read PDF](docs/Medical_Insurance_Presentation.pdf)
 - Video (max 5 min): [Presentation Video](https://www.youtube.com/watch?v=afm1RrXRQFo)
 
 ## AI-use disclosure
