@@ -63,7 +63,7 @@ insurance-cost-prediction/
 │   └── predictions.csv
 ├── docs/
 │   ├── expected_output.png
-│   └── medical-insurance-prediction.pdf
+│   └── Medical_Insurance_Presentation 
 ├── requirements.txt
 ├── .gitignore
 └── README.md
@@ -119,7 +119,7 @@ Files saved in `outputs/`:
 
 ## Links
 
-- Slides (5 slides): [Read PDF](Medical_Insurance_Presentation%20(1).pptx)
+- Slides (5 slides): [Medical_Insurance_Presentation.pptx](<Medical_Insurance_Presentation (1).pptx>)
 - Video (max 5 min): [TODO: unlisted YouTube or Drive link]
 
 ## AI-use disclosure
