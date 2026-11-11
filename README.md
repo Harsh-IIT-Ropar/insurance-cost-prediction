@@ -119,7 +119,7 @@ Files saved in `outputs/`:
 
 ## Links
 
-- Slides (5 slides): [Read PDF](https://github.com/Harsh-IIT-Ropar/insurance-cost-prediction/blob/main/docs/Modern%20Technology%20Medical%20insurence%20Presentation%202.pdf)
+- Slides (5 slides): [Read PDF](Medical_Insurance_Presentation%20(1).pptx)
 - Video (max 5 min): [TODO: unlisted YouTube or Drive link]
 
 ## AI-use disclosure
