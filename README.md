@@ -125,5 +125,5 @@ Files saved in `outputs/`:
 ## AI-use disclosure
 
 - Claude (Anthropic): used by us for Learning purpose ,Guidance in Set-up Git-Hub, and Giving intial Structure of Readme .
-- It also helps to solve doubts and removing error.
+- It also helps to solve doubts, debug the code and removing error.
 - No AI was used to generate the dataset or the results.
