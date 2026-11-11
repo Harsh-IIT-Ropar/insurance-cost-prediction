@@ -77,7 +77,7 @@ Tested on Python 3.14.6 (Windows).
 git clone https://github.com/Harsh-IIT-Ropar/insurance-cost-prediction.git
 cd insurance-cost-prediction
 python -m venv venv
-source venv/bin/activate      # Windows: venv\Scripts\activate
+venv\Scripts\activate          #Mac/Linux  source venv/bin/activate     
 pip install -r requirements.txt
 ```
 
